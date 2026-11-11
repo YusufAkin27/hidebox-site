@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HideBox Gizlilik Politikası</title>
+<meta name="description" content="HideBox veri toplamaz: hesap, sunucu ve analiz yoktur. Her şey cihazınızda şifreli olarak kalır.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="../../assets/logo-mark-black.svg">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../tr/"><img class="logo-b" src="../../assets/logo-mark-black.svg" alt="" width="24" height="24"><img class="logo-w" src="../../assets/logo-mark-white.svg" alt="" width="24" height="24">HideBox</a>
+<nav class="top" aria-label="Site"><a href="../../tr/">Ana sayfa</a><a href="../../privacy/tr/" aria-current="page">Gizlilik Politikası</a><a href="../../terms/tr/">Kullanım Koşulları</a><a class="lang" href="../../privacy/" hreflang="en" lang="en" title="English">English</a></nav>
+</div></header>
+<main><div class="wrap">
+<h1>Gizlilik Politikası</h1>
+<p class="meta">HideBox, Yusuf Akin tarafından sunulmaktadır. Yürürlük tarihi: 11 Kasım 2026.</p>
+<p class="lead">Kısaca: HideBox verilerinizi toplamaz, almaz ve paylaşmaz. Kasaya koyduğunuz her şey cihazınızda şifreli olarak kalır.</p>
+
+<h2 id="summary">1. Özet</h2>
+<ul>
+<li>Hesap, sunucu, analiz aracı, reklam ve veri toplayan üçüncü taraf SDK yoktur.</li>
+<li>Android yayın sürümü INTERNET iznini istemez ve uygulama hiçbir ağ isteği yapmaz. Geliştirici hiçbir kullanıcı verisi almaz.</li>
+<li>Öğeleriniz cihazda şifrelenir ve tarafımızdan hiçbir yere yedeklenmez. PIN kodunu unutursanız veya uygulamayı kaldırırsanız veriler kimse tarafından kurtarılamaz.</li>
+</ul>
+
+<h2 id="data">2. Cihazınızda kalanlar</h2>
+<p>Fotoğraflar, videolar, dosyalar, notlar, taramalar, ayarlar ve (aşağıda açıklanan) izinsiz giriş fotoğrafları yalnızca uygulamanın cihazınızdaki özel depolama alanında tutulur. AES-256-GCM ile şifrelenirler. Şifreleme anahtarı, Argon2id kullanılarak PIN kodunuzdan türetilir ve cihazdaki donanım destekli bir anahtara bağlanır. Bunların hiçbirine erişimimiz yoktur; uygulama bunları bize veya başkasına göndermez.</p>
+<p>Bulut senkronizasyonu veya yedekleme özelliği yoktur. Öğelerinizin bir kopyasını yalnızca siz, uygulamanın dışa aktarma işleviyle çıkarabilirsiniz; dışa aktarılan dosyaya ne yapılacağı sizin denetiminizdedir.</p>
+
+<h2 id="permissions">3. İzinler ve neden istendikleri</h2>
+<p>Her izin yalnızca aşağıdaki amaç için ve yalnızca cihazınızda kullanılır.</p>
+<ul>
+<li><strong>Fotoğraflar ve medya.</strong> Seçtiğiniz fotoğraf ve videoları içe aktarmak için. İsterseniz uygulama, içe aktarmadan sonra orijinalleri silebilir; bunu yalnızca siz talep ettiğinizde yapar.</li>
+<li><strong>Kamera.</strong> Fotoğraf ve video çekmek ve belgeleri kasaya taramak için. Çekilen öğeler fotoğraf arşivinize değil, uygulamada şifreli olarak saklanır. Kamera ayrıca isteğe bağlı izinsiz giriş fotoğrafı için de kullanılır (sonraki bölüm).</li>
+<li><strong>Biyometri (Face ID, parmak izi).</strong> Açarsanız uygulamanın kilidini açmak için. Biyometrik doğrulamayı işletim sisteminiz yapar. Uygulama yalnızca evet ya da hayır sonucunu alır, biyometrik verilerinizi hiçbir zaman görmez.</li>
+<li><strong>Bildirimler.</strong> Bir içe aktarma bittiğinde isteğe bağlı yerel bildirim. Uygulama anlık (push) bildirim kullanmaz ve bir bildirim sunucusuyla iletişim kurmaz.</li>
+<li><strong>Hareket sensörleri.</strong> İsteğe bağlı sallayarak kilitleme ve ekran aşağı bakınca kilitleme özelliği ivmeölçeri yalnızca uygulamayı kilitlemek için kullanır. Okumalar saklanmaz veya gönderilmez.</li>
+<li><strong>Mikrofon (iOS).</strong> Uygulamanın özellikleriyle ses kaydederseniz iOS mikrofon erişimi isteyebilir. Kaydedilen ses yalnızca cihazdaki uygulamada şifreli olarak tutulur. Android yayın sürümünde mikrofon izni bulunmaz.</li>
+<li><strong>Fotoğraflara kaydetme (iOS).</strong> Bir dosya, fotoğraf arşivinize yalnızca siz kendiniz dışa aktardığınızda eklenir.</li>
+</ul>
+<p>Her izni cihaz ayarlarından istediğiniz zaman geri alabilirsiniz. İzne ihtiyaç duyan özellikler çalışmaz hale gelir, ancak kasanız olduğu gibi kalır.</p>
+
+<h2 id="breakin">4. İzinsiz giriş fotoğrafı</h2>
+<p>İzinsiz giriş fotoğrafı isteğe bağlıdır ve varsayılan olarak kapalıdır. Açarsanız uygulama, sizin belirlediğiniz sayıda hatalı PIN denemesinden sonra ön kamerayla bir fotoğraf çeker. Fotoğraf yalnızca cihazınızda şifreli olarak saklanır, yalnızca doğru kilit açma sonrasında uygulamanın içinde gösterilir ve hiçbir zaman iletilmez. Dilediğiniz zaman silebilirsiniz.</p>
+<p>Bu tür bir fotoğrafta başka bir kişi görünebilir. Bu özelliği, bulunduğunuz yerde geçerli bilgilendirme veya rıza yükümlülükleri dahil, hukuka uygun biçimde kullanmaktan siz sorumlusunuz.</p>
+
+<h2 id="erase">5. Otomatik silme ve sıfırlama</h2>
+<p>Otomatik silmeyi etkinleştirirseniz uygulama, belirlediğiniz sayıda hatalı PIN denemesinden sonra cihazdaki kasayı kalıcı olarak siler. &ldquo;Kasayı sıfırla&rdquo; isteğiniz üzerine aynı işlemi yapar. Silinen veriler geri getirilemez.</p>
+
+<h2 id="purchases">6. Satın alımlar</h2>
+<p>İsteğe bağlı abonelikler veya tek seferlik satın alma, Apple App Store ya da Google Play tarafından işlenir. Uygulama, ücretli özellikleri açabilmek için mağazadan cihazınızda yalnızca satın alma durumunu alır. Ödeme bilgilerinizi, adınızı veya mağaza hesabı bilgilerinizi almayız ve saklamayız. Ödemeler mağazanın kendi koşullarına ve gizlilik politikasına tabidir.</p>
+
+<h2 id="sharing">7. Paylaşım ve üçüncü taraflar</h2>
+<p>Elimizde veri bulunmadığı için veri satmaz, paylaşmaz ve aktarmayız. Uygulamada reklam veya analiz kodu, veri toplayan üçüncü taraf SDK bulunmaz. Bu politikaya veya koşullara giden bağlantılar, kendi gizlilik uygulamaları olan ayrı bir uygulama olan tarayıcınızda açılır.</p>
+
+<h2 id="children">8. Çocuklar</h2>
+<p>HideBox çocuklara yönelik değildir. Uygulama hiç kimseden bir şey toplamadığı için çocuklardan da bilerek bilgi toplamaz.</p>
+
+<h2 id="rights">9. Haklarınız</h2>
+<p>GDPR ve Türkiye&rsquo;deki KVKK gibi mevzuat, veri sorumlusunun elindeki kişisel veriler üzerinde erişim, düzeltme ve silme gibi haklar tanır. Geliştirici kişisel verilerinizi toplamadığı ve işlemediği için bizim sunacağımız, düzeltebileceğimiz veya silebileceğimiz bir veri yoktur. Tüm verileriniz cihazınızda sizin denetiminizdedir; Kasayı sıfırla ile veya uygulamayı kaldırarak istediğiniz zaman silebilirsiniz. Bize e-posta gönderirseniz mesajınızı ve adresinizi yalnızca yanıt vermek için kullanır, gerek kalmadığında sileriz.</p>
+
+<h2 id="security">10. Güvenlik ve sınırlar</h2>
+<p>HideBox&rsquo;ı öğelerinizi güçlü ve yaygın olarak bilinen kriptografiyle koruyacak şekilde tasarlıyoruz; ancak hiçbir yazılım mutlak güvenlik vaat edemez. PIN kodunuzu bilen veya kilidi açık telefonunuza sahip olan biri kasayı açabilir. Gizli simge veya örtü modu uygulamayı daha az dikkat çekici kılar, ancak uygulama bir cihazda tamamen görünmez olamaz. Kurtarma yoktur: PIN kodunuzu güvende tutun ve kaybetmeyi göze alamayacağınız öğeleri dışa aktarın.</p>
+
+<h2 id="changes">11. Politika değişiklikleri</h2>
+<p>Bu politika değişirse yeni sürümü bu sayfada yayımlar ve yürürlük tarihini güncelleriz. Önemli değişiklikler uygun olduğunda uygulamada veya mağaza sayfasında da belirtilir.</p>
+
+<h2 id="contact">12. İletişim</h2>
+<p>Yusuf Akin: <a href="mailto:ysufakin23@gmail.com">ysufakin23@gmail.com</a></p>
+
+</div></main>
+<footer><div class="wrap"><span>HideBox. Hesap yok, sunucu yok, izleme yok.</span><a href="../../privacy/tr/">Gizlilik Politikası</a> <a href="../../terms/tr/">Kullanım Koşulları</a></div></footer>
+</body>
+</html>
